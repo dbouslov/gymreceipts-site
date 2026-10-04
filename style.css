@@ -1,0 +1,24 @@
+/* Gym Receipts public pages: one paper receipt on the counter. Plain CSS, no web fonts. */
+:root { --counter: #d9d5ca; --paper: #f7f4ec; --ink: #2b2b30; --muted: #5d5d63; --rule: #b9b4a8; --red: #c7372c; }
+@media (prefers-color-scheme: dark) { :root { --counter: #24262a; } }
+* { box-sizing: border-box; }
+html { background: var(--counter); }
+body {
+  margin: 2rem auto; max-width: 42rem; padding: 2rem 1.75rem 2.5rem;
+  background: var(--paper); color: var(--ink);
+  font: 16px/1.6 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+}
+header { text-align: center; border-bottom: 2px dashed var(--rule); padding-bottom: 1rem; margin-bottom: 1.25rem; }
+header .brand { font-size: 1.6rem; letter-spacing: 0.12em; text-transform: uppercase; margin: 0; }
+header .title { text-transform: uppercase; letter-spacing: 0.08em; margin: 0.25rem 0 0; }
+header .date { color: var(--muted); font-size: 0.85rem; margin: 0.25rem 0 0; }
+nav { text-align: center; font-size: 0.9rem; margin-bottom: 1.25rem; }
+nav a { margin: 0 0.5rem; }
+h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; border-top: 1px dashed var(--rule); padding-top: 1rem; margin-top: 1.5rem; }
+a { color: var(--ink); }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.35rem 0.4rem 0.35rem 0; border-bottom: 1px dotted var(--rule); overflow-wrap: anywhere; }
+.stamp { color: var(--red); border: 2px solid var(--red); display: inline-block; padding: 0 0.4rem; transform: rotate(-3deg); text-transform: uppercase; }
+footer { text-align: center; color: var(--muted); border-top: 2px dashed var(--rule); margin-top: 2rem; padding-top: 1rem; font-size: 0.85rem; }
+@media (max-width: 30rem) { body { margin: 0; padding: 1.25rem 1rem 2rem; box-shadow: none; } table { font-size: 0.78rem; } }

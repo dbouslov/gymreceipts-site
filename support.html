@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- SUPPORT_EMAIL: keep it in step with the app's support address; also replace the address
+     written in each mailto link (shown when JavaScript is off). Links stay relative. -->
+<html lang="en">
+<head>
+<script>const SUPPORT_EMAIL = "dbouslov@gmail.com";</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Gym Receipts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="brand">Gym Receipts</p>
+  <p class="title">Support</p>
+</header>
+<nav><a href="support.html">Support</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></nav>
+
+<h2>Contact</h2>
+<p>Email <a data-support-email href="mailto:dbouslov@gmail.com">dbouslov@gmail.com</a>. Reports of objectionable content are reviewed within 24 hours. Please include your @username (never your Apple ID password).</p>
+
+<h2>Checking in</h2>
+<ul>
+  <li><strong>How do I check in?</strong> At the gym, open the app and tap I WENT. Take the photo with the camera (photos are always live; the photo library isn't used). One check-in a day counts; extra ones are kept as photos.</li>
+  <li><strong>When does the day end?</strong> At 3:00 AM where you are, so a late-night session counts for the day it started.</li>
+  <li><strong>I was offline.</strong> Check-ins save on your phone and send when you're back online (the receipt says QUEUED, WILL SYNC). A check-in for yesterday still counts if it reaches the server before 9:00 AM.</li>
+  <li><strong>New phone or reinstalled?</strong> Sign in with the same Apple ID. Your check-ins come back; photos download as you view them.</li>
+  <li><strong>The camera doesn't open.</strong> Settings app &gt; Gym Receipts &gt; Camera: on.</li>
+  <li><strong>No reminders?</strong> In the app, Settings &gt; Reminders; and in the Settings app, Notifications &gt; Gym Receipts: allowed.</li>
+</ul>
+
+<h2>Friends, groups and challenges</h2>
+<ul>
+  <li><strong>Add a friend:</strong> Feed tab &gt; Friends: search their exact @username, or share your invite link or QR code.</li>
+  <li><strong>Join a group:</strong> open the invite link or scan its QR code, or Groups &gt; Join with a link.</li>
+  <li><strong>Challenges</strong> have no prizes or fees; they're bragging rights.</li>
+</ul>
+
+<h2>Safety</h2>
+<ul>
+  <li><strong>Report</strong> a photo, person, group or challenge from its ... menu or the flag in the photo viewer. It disappears for you at once and our moderators review it within 24 hours.</li>
+  <li><strong>Block</strong> someone from their profile, a feed item or a leaderboard row. You'll stop seeing each other everywhere.</li>
+  <li>Something urgent or unsafe? Email us with "URGENT" in the subject. If someone is in danger, call your local emergency number.</li>
+</ul>
+
+<h2>Your account and data</h2>
+<ul>
+  <li><strong>Delete your account:</strong> Settings &gt; Account &gt; Delete account. Everything on our servers goes, and the app's data on that phone is wiped.</li>
+  <li><strong>Anonymous usage data:</strong> Settings &gt; Privacy &gt; Share anonymous usage data: off.</li>
+  <li>Details: <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a>.</li>
+</ul>
+
+<footer>No refunds on sweat</footer>
+<script>document.querySelectorAll("[data-support-email]").forEach(a => { a.href = "mailto:" + SUPPORT_EMAIL; a.textContent = SUPPORT_EMAIL; });</script>
+</body>
+</html>
